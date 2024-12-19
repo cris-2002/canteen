@@ -1,0 +1,205 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f0f8ff, #dbe9f5);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    background-color: #ffcc00;
+    color: #003366;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(1.05);
+}
+
+a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: #00509e;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #ffffe0;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    font-size: 1.1em;
+    transition: transform 0.3s ease-in-out;
+}
+
+table:hover {
+    transform: scale(1.02);
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+}
+
+td a {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #003366;
+    font-size: 1em;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+td a:hover {
+    background-color: #ffdb4d;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Button for Add New Item */
+.add-button {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 20px 40px;
+    background-color: #003366;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease-in-out;
+}
+
+.add-button:hover {
+    background-color: #00509e;
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.add-button:active {
+    transform: scale(1) translateY(0);
+}
+
+.add-button:focus {
+    outline: none;
+    box-shadow: 0 0 15px #00509e;
+}
+
+form {
+    width: 60%;
+    margin: 30px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffffe0, #fff9c4);
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #003366;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px #00509e;
+    transform: scale(1.02);
+}
+
+form button {
+    background-color: #003366;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00509e;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form button:active {
+    transform: translateY(0);
+}
+
+/* Additional Enhancements for Mobile View */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+        padding: 15px 0;
+    }
+
+    table {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    form input, form button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
