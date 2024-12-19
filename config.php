@@ -2,8 +2,8 @@
 // config.php
 $host = 'localhost';
 $db = 'cafeteria_management';
-$user = 'root';
-$pass = '';
+$user = 'cristy';
+$pass = 'gocong';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
